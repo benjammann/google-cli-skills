@@ -2,7 +2,7 @@
 
 Create and format Google Docs from markdown — headings, bold, italic, lists, tables, code blocks, blockquotes, and smart typography.
 
-Built as a [Claude Code skill](https://docs.anthropic.com/en/docs/claude-code/skills) for AI-assisted document creation.
+Built as a [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill for AI-assisted document creation.
 
 ## Quick Start
 
@@ -50,7 +50,9 @@ gdocs parse myfile.md
 | `\| table \|` | Native Google Docs table |
 | `> quote` | Indented blockquote with left border |
 | ` ``` code ``` ` | Code block (Consolas, 10pt) |
-| `---` | Horizontal rule |
+| `---` | Horizontal rule (styled line characters*) |
+
+*\*The Google Docs API has no native horizontal rule insert — rendered as centered box-drawing characters.*
 
 **Smart typography** is applied automatically:
 - `"straight quotes"` → "curly quotes"
@@ -74,7 +76,7 @@ gdocs parse myfile.md
 **Default locations:**
 ```
 ~/.config/gdocs-cli/credentials.json   # OAuth client config
-~/.config/gdocs-cli/tokens.json        # Auth tokens (created after first login)
+~/.config/gdocs-cli/tokens.json        # OAuth tokens (see step 3)
 ```
 
 **Or use environment variables:**
@@ -85,9 +87,14 @@ export GDOCS_TOKEN_PATH=/your/path/tokens.json
 
 > **Sharing credentials across Google CLIs:** If you already have Google OAuth set up for another tool, you can point both env vars at your existing credential files.
 
-### 3. First Authentication
+### 3. Get Tokens
 
-Run any command — it will prompt you to authenticate via browser if tokens don't exist yet.
+The CLI needs OAuth tokens to authenticate. You can get these by:
+
+- Using an existing Google OAuth tool (e.g., GDrive MCP) and copying its `tokens.json`
+- Running a one-time OAuth flow with a script like [google-auth-library](https://github.com/googleapis/google-auth-library-nodejs#oauth2)
+
+Place the resulting tokens file at the path above (or set `GDOCS_TOKEN_PATH`).
 
 ## Using as a Claude Code Skill
 

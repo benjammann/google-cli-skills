@@ -34,7 +34,7 @@ function getAuthClient() {
 
   if (!existsSync(TOKEN_PATH)) {
     console.error('Error: OAuth tokens not found at', TOKEN_PATH);
-    console.error('Run `gdocs auth` to authenticate.');
+    console.error('See README for setup instructions.');
     process.exit(1);
   }
 

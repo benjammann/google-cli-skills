@@ -29,7 +29,7 @@ All skills share Google OAuth credentials. Set up once, use everywhere:
 
 1. Create a [Google Cloud project](https://console.cloud.google.com/) with the relevant APIs enabled
 2. Create OAuth 2.0 credentials (Desktop app type)
-3. Place credentials at `~/.config/gdocs-cli/credentials.json` (or set env vars — see each skill's README)
+3. Place credentials and tokens per each skill's README (env var overrides supported)
 
 ## License
 

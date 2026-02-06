@@ -91,9 +91,9 @@ npm install
 npm link  # Makes 'gdocs' available globally
 ```
 
-### 4. Authenticate
+### 4. Get Tokens
 
-On first run, you'll need to authenticate with Google. The CLI will guide you through the OAuth flow.
+The CLI needs an OAuth `tokens.json` file. Get one by using an existing Google OAuth tool (e.g., GDrive MCP) and copying its tokens, or by running a one-time OAuth flow with [google-auth-library](https://github.com/googleapis/google-auth-library-nodejs#oauth2).
 
 ## CLI Path
 
