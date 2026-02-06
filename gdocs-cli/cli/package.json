@@ -18,6 +18,11 @@
     "formatting"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benjammann/google-cli-skills.git",
+    "directory": "gdocs-cli"
+  },
   "dependencies": {
     "commander": "^12.0.0",
     "googleapis": "^140.0.0",

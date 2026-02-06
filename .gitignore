@@ -1,5 +1,9 @@
 node_modules/
 *.log
+*.tgz
 .env
+.env.*
+.DS_Store
+Thumbs.db
 credentials.json
 tokens.json

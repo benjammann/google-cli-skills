@@ -170,7 +170,7 @@ async function processTables(docs, docId, tables) {
 program
   .name('gdocs')
   .description('Google Docs CLI — create and format docs from markdown')
-  .version('1.0.0');
+  .version('1.1.0');
 
 /**
  * Create new doc with markdown content

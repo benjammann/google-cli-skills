@@ -26,23 +26,12 @@ npm link  # Makes 'gdocs' available globally
 Set up Google OAuth credentials (see [Setup](#setup) below), then:
 
 ```bash
-# Create a formatted doc from a markdown file
-gdocs create "My Document" --from-markdown notes.md
-
-# Inline markdown
-gdocs create "Quick Doc" -m "# Title\n\n**Bold** and *italic* text\n\n- Bullet one\n- Bullet two"
-
-# Format an existing doc
-gdocs format <docId> --from-markdown content.md --replace
-
-# Append content
-gdocs append <docId> "## New Section\nMore content here"
-
-# Read a doc
-gdocs get <docId>
-
-# Test parsing without API calls
-gdocs parse myfile.md
+gdocs create "My Document" --from-markdown notes.md     # Create from file
+gdocs create "Quick Doc" -m "# Hello\n**bold** text"    # Create inline
+gdocs format <docId> --replace -f updated.md             # Replace doc content
+gdocs append <docId> "## New Section"                    # Append to doc
+gdocs get <docId>                                        # Read doc content
+gdocs parse myfile.md                                    # Test without API calls
 ```
 
 ## Supported Markdown
