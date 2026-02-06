@@ -7,7 +7,10 @@ Create and format Google Docs from markdown — headings, bold, italic, lists, t
 
 Built as a [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill for AI-assisted document creation.
 
+<br>
+
 <p align="center">
+  <em>Example output — generated from markdown in one command</em><br><br>
   <img width="720" alt="gdocs-cli output example" src="https://github.com/user-attachments/assets/8e5ed831-0188-4546-a071-dff4a7d177f7" />
 </p>
 
