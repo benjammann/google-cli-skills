@@ -1,5 +1,8 @@
 # gdocs-cli
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../LICENSE)
+[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-green.svg)](https://nodejs.org/)
+
 Create and format Google Docs from markdown — headings, bold, italic, lists, tables, code blocks, blockquotes, and smart typography.
 
 Built as a [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill for AI-assisted document creation.

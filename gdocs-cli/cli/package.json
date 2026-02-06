@@ -7,6 +7,17 @@
     "gdocs": "./index.js"
   },
   "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "google-docs",
+    "markdown",
+    "cli",
+    "claude-code",
+    "formatting"
+  ],
+  "license": "MIT",
   "dependencies": {
     "commander": "^12.0.0",
     "googleapis": "^140.0.0",
