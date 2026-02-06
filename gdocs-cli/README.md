@@ -7,9 +7,10 @@ Built as a [Claude Code skill](https://docs.anthropic.com/en/docs/claude-code/sk
 ## Quick Start
 
 ```bash
-cd cli
+git clone https://github.com/benjammann/google-cli-skills.git
+cd google-cli-skills/gdocs-cli/cli
 npm install
-npm link
+npm link  # Makes 'gdocs' available globally
 ```
 
 Set up Google OAuth credentials (see [Setup](#setup) below), then:
@@ -90,19 +91,16 @@ Run any command — it will prompt you to authenticate via browser if tokens don
 
 ## Using as a Claude Code Skill
 
-Drop the entire repo into your skills directory:
+Copy the `gdocs-cli` folder into your skills directory:
 
 ```bash
 # User-level (available in all projects)
-cp -r gdocs-cli ~/.claude/skills/gdocs-cli
+cp -r google-cli-skills/gdocs-cli ~/.claude/skills/gdocs-cli
+cd ~/.claude/skills/gdocs-cli/cli && npm install
 
 # Or project-level
-cp -r gdocs-cli .claude/skills/gdocs-cli
-```
-
-Then install dependencies:
-```bash
-cd ~/.claude/skills/gdocs-cli/cli && npm install
+cp -r google-cli-skills/gdocs-cli .claude/skills/gdocs-cli
+cd .claude/skills/gdocs-cli/cli && npm install
 ```
 
 Claude will automatically detect and use the skill when you ask it to create or format Google Docs.

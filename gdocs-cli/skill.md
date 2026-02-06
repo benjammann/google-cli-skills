@@ -86,7 +86,7 @@ export GDOCS_TOKEN_PATH=/path/to/tokens.json
 ### 3. Install
 
 ```bash
-cd cli
+cd ~/.claude/skills/gdocs-cli/cli
 npm install
 npm link  # Makes 'gdocs' available globally
 ```
@@ -97,8 +97,4 @@ On first run, you'll need to authenticate with Google. The CLI will guide you th
 
 ## CLI Path
 
-```
-cli/index.js
-```
-
-Run directly: `node cli/index.js create "Test"`
+Run directly: `node ~/.claude/skills/gdocs-cli/cli/index.js create "Test"`
