@@ -4,7 +4,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-green.svg)](https://nodejs.org/)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-skill-blueviolet.svg)](https://docs.anthropic.com/en/docs/claude-code)
 
-[Claude Code](https://docs.anthropic.com/en/docs/claude-code) skills for Google Workspace APIs. Lightweight CLI tools that Claude can invoke on-demand — no always-on MCP servers needed. Skills for Drive, Cal, and Gmail to be added soon.
+[Claude Code](https://docs.anthropic.com/en/docs/claude-code) skills for Google Workspace APIs. Lightweight CLI tools that Claude can invoke on-demand — no always-on MCP servers needed. Skills for Drive, Cal, and Gmail to be added soon. (or just ask Claude to make those based on this skill. Auth will work for all skills once you set up google cloud account the first time)
 
 ## Skills
 
