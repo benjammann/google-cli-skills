@@ -1,4 +1,7 @@
-# gdocs-cli Skill
+# gdocs-cli (DEPRECATED)
+
+> **This skill has been superseded by [gdrive-cli](../gdrive-cli/)**. gdrive-cli includes all gdocs-cli functionality plus Drive, Sheets, Slides, Forms, and file management.
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-green.svg)](https://nodejs.org/)

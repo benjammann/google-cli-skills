@@ -1,0 +1,17 @@
+{
+  "name": "gdrive-cli",
+  "version": "1.0.0",
+  "description": "Google Drive CLI for Claude Code — Docs, Sheets, Slides, and file management",
+  "main": "index.js",
+  "bin": {
+    "gdrive": "./index.js"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "googleapis": "^140.0.0",
+    "marked": "^12.0.0"
+  }
+}
